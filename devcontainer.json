@@ -1,0 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+{
+    "name": "C/C++ Devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    // "image": "your-registry/your-image:latest",      // ready to use image
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+            "ms-vscode.cpptools",
+            "ms-vscode.cmake-tools",
+            "vadimcn.vscode-lldb",
+            "ms-vscode.makefile-tools",
+            "ms-python.python"
+            ]
+        }
+    }
+}
