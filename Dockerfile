@@ -38,5 +38,5 @@ WORKDIR /workspace
 
 # modify gdb to work on apple silicon
 # https://github.com/docker/for-mac/issues/6921#issuecomment-2409324575
-COPY  ../.devcontainer/gdb /usr/local/bin/gdb
+# COPY  ../.devcontainer/gdb /usr/local/bin/gdb
 
