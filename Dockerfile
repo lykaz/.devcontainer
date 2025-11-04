@@ -7,7 +7,9 @@ ENV TZ=Europe/Vienna
 
 RUN apt-get update
 
-RUN apt-get install -y \
+RUN apt update && apt install -y \
+    # git
+    git \
     # g++, gcc, make, gdb, cmake
     build-essential \
     gdb \
