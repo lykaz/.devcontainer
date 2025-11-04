@@ -34,6 +34,15 @@ RUN apt update && apt install -y \
     # utilities
     coreutils \
     libtool-bin \
+    locales \
+    autoconf \
+    automake \
+    pkg-config \
+    autoconf-archive \
+    # protobuf
+    protobuf-compiler \
+    # for scripts
+    sudo \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
