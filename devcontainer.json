@@ -14,11 +14,12 @@
     "customizations": {
         "vscode": {
             "extensions": [
-            "ms-vscode.cpptools",
-            "ms-vscode.cmake-tools",
-            "vadimcn.vscode-lldb",
-            "ms-vscode.makefile-tools",
-            "ms-python.python"
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "vadimcn.vscode-lldb",
+                "ms-vscode.makefile-tools",
+                "ms-python.python",
+                "ms-vscode.cpptools-extension-pack"
             ]
         }
     }
