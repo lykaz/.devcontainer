@@ -8,6 +8,9 @@
     // "image": "your-registry/your-image:latest",      // ready to use image
     "workspaceFolder": "/workspace",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
