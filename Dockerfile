@@ -26,7 +26,15 @@ RUN apt-get install -y \
     # python
     python3 \
     python3-pip \
+    # network
+    netcat-openbsd \
+    # utilities
+    coreutils \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
+
+# modify gdb to work on apple silicon
+# https://github.com/docker/for-mac/issues/6921#issuecomment-2409324575
+COPY  ../.devcontainer/gdb /usr/local/bin/gdb
 
