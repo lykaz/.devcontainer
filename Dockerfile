@@ -33,6 +33,7 @@ RUN apt update && apt install -y \
     netcat-openbsd \
     # utilities
     coreutils \
+    libtool-bin \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
