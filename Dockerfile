@@ -41,6 +41,7 @@ RUN apt update && apt install -y \
     autoconf-archive \
     # protobuf
     protobuf-compiler \
+    libzmq3-dev \
     # for scripts
     sudo \
     && rm -rf /var/lib/apt/lists/*
