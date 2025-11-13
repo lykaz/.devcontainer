@@ -18,7 +18,7 @@ RUN apt update && apt install -y \
     clang \
     lldb \
     # nasty memory leaks
-    valgrind\
+    valgrind \
     # ninja build system
     ninja-build \
     # somewhat useful stuff
@@ -41,6 +41,7 @@ RUN apt update && apt install -y \
     autoconf-archive \
     # protobuf
     protobuf-compiler \
+    libprotobuf-dev \
     libzmq3-dev \
     # for scripts
     sudo \
